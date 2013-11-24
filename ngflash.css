@@ -1,0 +1,23 @@
+
+.ngflashmessage.ng-move,
+.ngflashmessage.ng-enter,
+.ngflashmessage.ng-leave {
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+ 
+.ngflashmessage.ng-leave.ng-leave-active,
+.ngflashmessage.ng-move,
+.ngflashmessage.ng-enter {
+  opacity: 0;
+  max-height: 0%;
+  padding: 0px;
+}
+ 
+.ngflashmessage.ng-leave,
+.ngflashmessage.ng-move.ng-move-active,
+.ngflashmessage.ng-enter.ng-enter-active {
+  opacity: 1;
+  max-height: 100%;
+  padding: 15px;
+}
